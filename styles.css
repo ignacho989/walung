@@ -111,7 +111,7 @@ body {
 
 .container main {
   width: 100%;
-  height: 100vh;
+  height: auto;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -120,12 +120,12 @@ body {
 }
 
 .relleno {
-  height: 7rem;
+  height: 6rem;
 }
 
 .hero {
   width: 100%;
-  height: 50rem;
+  height: 50vh;
   /* position: absolute;
   top: 10%; */
   /* right: 5%; */
@@ -134,7 +134,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url('./images/elhoyo.webp') no-repeat;
+  background: url('./images/walung_principal.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 4rem;
@@ -145,11 +145,18 @@ body {
 
 
 .hero-h2 {
+  background: rgba(0, 0, 0, .5);
+  width: auto;
+  height: auto;
   font-size: var(--h2-font-size);
   font-weight: bold;
   font-family: 'Assistant', sans-serif;
   color: #fff;
+  display: flex;
+  align-items: center;
   text-align: center;
+  padding: 4rem 4rem 4rem 4rem;
+
 }
 
 .intro {
