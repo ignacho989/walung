@@ -9,11 +9,7 @@
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 html {
   font-size: 12px;
@@ -21,9 +17,7 @@ html {
 
 body {
   font-size: 1rem;
-  /* background: url('./images/elhoyo.webp') no-repeat;
-  background-size: cover;
-  background-position: center; */
+
 }
 
 .containers {
@@ -35,10 +29,10 @@ body {
 
 .containers header {
   height: 7rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
-.header {
+.headers {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,7 +45,7 @@ body {
   z-index: 100;
 }
 
-.header::before {
+.headers::before {
   content: '';
   position: absolute;
   top: 0;
@@ -115,7 +109,7 @@ body {
   display: none;
 }
 
-.container main {
+.containers main {
   width: 100%;
   height: auto;
   border: 2px solid black;
@@ -132,10 +126,7 @@ body {
 .hero {
   width: 100%;
   height: 100vh;
-  /* position: absolute;
-  top: 10%; */
-  /* right: 5%; */
-  /* background: rgba(255, 255, 255, 0.5); */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,7 +135,7 @@ body {
   background-size: cover;
   background-position: center;
   padding-top: 4rem;
-  /* z-index: 99; */
+
 
 }
 
@@ -192,7 +183,7 @@ body {
 }
 
 .carrusel {
-  width: 50rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,102 +195,7 @@ body {
   max-height: 600px;
 }
 
-/* .grilla {
-  width: 70%;
-  height: 100vh;
-  display: grid;
-  grid-column: auto;
-  grid-row: auto;
 
-}
-
-img-grilla {
-  width: 7rem;
-  height: auto;
-} */
-
-/* .seccion-carrusel {
-  width: 50%;
-  height: auto;
-
-
-}
-
-
-
-.carousel {
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
-
-.carousel>ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-}
-
-.slide>img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
-.slide[data-active] {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0ms;
-}
-
-.carousel-button {
-  position: absolute;
-  z-index: 2;
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(255, 255, 255, .5);
-  cursor: pointer;
-  border-radius: .25rem;
-  padding: 0 .5rem;
-  background-color: rgba(0, 0, 0, .1);
-}
-
-.carousel-button:hover,
-.carousel-button:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, .2);
-}
-
-.carousel-button:focus {
-  outline: 1px solid black;
-}
-
-.carousel-button.prev {
-  left: 1rem;
-}
-
-.carousel-button.next {
-  right: 1rem;
-} */
 
 .comodidades {
   width: auto;
@@ -346,7 +242,6 @@ img-grilla {
 .pirque {
   width: 100%;
   padding: 2rem;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -354,7 +249,7 @@ img-grilla {
 }
 
 .div-textos-reservas {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -392,14 +287,44 @@ img-grilla {
 }
 
 .boton-reservar:hover {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  background-color: black;
+  color: #fff;
 }
 
 /* BREAKPOINTS */
 @media (max-width: 992px) {
-  .header {
+  .headers {
     padding: 1.5rem 5%;
 
+  }
+
+  .reservas {
+    flex-direction: column-reverse;
+  }
+
+  .div-textos-reservas {
+    width: 100%;
+    align-items: center;
+  }
+
+  .titulo-reserva {
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .descripcion-reserva {
+    width: 100%;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .boton-reservar {
+    margin: 2rem;
+  }
+
+  .pirque {
+    max-width: 30rem;
   }
 }
 
@@ -409,14 +334,7 @@ img-grilla {
 
   }
 
-  .reservas {
-    flex-direction: column-reverse;
-    flex-wrap: wrap-reverse;
-  }
 
-  .pirque {
-    max-width: 30rem;
-  }
 
   #check:checked~.icons #menu-icon {
     display: none;
