@@ -192,9 +192,9 @@ body {
 
 }
 
-.carousel-inner .item {
+/* .carousel-inner .item {
   max-height: 600px;
-}
+} */
 
 
 
@@ -274,16 +274,17 @@ body {
 
 .boton-reservar {
   font-family: 'Assistant', sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   text-align: left;
   margin: 0 2rem 2rem 5rem;
   text-decoration: none;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 4px;
   padding: 1rem;
   color: black;
-  background-color: rgb(238, 225, 36);
+  background-color: rgb(248, 248, 246);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   transition: all 0.2s ease-in;
 }
 
@@ -291,6 +292,67 @@ body {
   /* font-size: 2.5rem; */
   background-color: black;
   color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 3rem;
+  background-color: rgb(8, 8, 8);
+  color: #fff;
+}
+
+
+
+/* .iconos-contacto {
+  height: 10rem;
+  width: 50%;
+
+} */
+
+.iconos-contacto a {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-contacto i {
+  color: white;
+  font-size: 3rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-contacto a:hover {
+  background-color: white;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.iconos-contacto a:hover i {
+  color: black;
+}
+
+.booking {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+
+.booking img {
+  width: 5rem;
+  height: 5rem;
+
 }
 
 /* BREAKPOINTS */
@@ -318,6 +380,8 @@ body {
     width: 100%;
     text-align: center;
     margin: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .boton-reservar {
@@ -325,7 +389,7 @@ body {
   }
 
   .pirque {
-    max-width: 30rem;
+    width: 100%;
   }
 }
 
