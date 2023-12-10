@@ -172,7 +172,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 1rem;
+  padding-block: 3rem;
 }
 
 .subtitulos {
@@ -192,13 +192,16 @@ body {
 }
 
 .carrusel {
-  max-width: 70%;
-  height: auto;
+  width: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+}
+
+.carousel-inner .item {
+  max-height: 600px;
 }
 
 /* .grilla {
@@ -321,6 +324,77 @@ img-grilla {
   width: 100%;
 }
 
+.reservas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.div-imagen-reservas {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.pirque {
+  width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-textos-reservas {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.titulo-reserva {
+  font-family: 'Assistant', sans-serif;
+  font-size: var(--h2-font-size);
+  margin: 2rem 0 2rem 5rem;
+  text-align: left;
+}
+
+.descripcion-reserva {
+  width: 70%;
+  font-family: 'Assistant', sans-serif;
+  font-size: var(--p-font-size);
+  text-align: left;
+  margin: 0 2rem 2rem 5rem;
+}
+
+.boton-reservar {
+  font-family: 'Assistant', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin: 0 2rem 2rem 5rem;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 1rem;
+  color: black;
+  background-color: rgb(238, 225, 36);
+  transition: all 0.2s ease-in;
+}
+
+.boton-reservar:hover {
+  font-size: 2.5rem;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
   .header {
@@ -333,6 +407,15 @@ img-grilla {
   .icons {
     display: inline-flex;
 
+  }
+
+  .reservas {
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  .pirque {
+    max-width: 30rem;
   }
 
   #check:checked~.icons #menu-icon {
