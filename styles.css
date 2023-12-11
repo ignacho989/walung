@@ -170,6 +170,7 @@ body {
   font-family: 'Assistant', sans-serif;
   font-size: var(--h2-font-size);
   margin: 2rem;
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -360,6 +361,40 @@ footer {
 
 }
 
+.whatsapp {
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+
+  width: 8rem;
+  height: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp a {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsape {
+  width: 8rem;
+  /* border-radius: 50%; */
+  transition: all 0.2s ease-in;
+}
+
+.whatsape:hover {
+  width: 10rem;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
   .headers {
@@ -395,6 +430,14 @@ footer {
 
   .pirque {
     width: 100%;
+  }
+
+  .whatsape {
+    width: 6rem;
+  }
+
+  .whatsape:hover {
+    width: 8rem;
   }
 }
 
