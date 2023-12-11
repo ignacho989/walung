@@ -4,6 +4,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Walung">
+  <meta name="description" content="Alojamiento turistico en el hoyo, chubut">
+  <meta name="keywords" content="alojamiento, cabañas, booking, argentina, bolson, comarca">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alojamiento Walüng</title>
   <!-- CSS -->
@@ -28,7 +31,7 @@
   <div class="containers">
     <header class="headers">
       <div class="logos">
-        <a href="" class="logo">Walüng</a>
+        <a href="#hero" class="logo">Walüng</a>
         <h2 class="logo2">-Alojamiento-</h2>
       </div>
       <input type="checkbox" id="check">
@@ -38,15 +41,16 @@
       </label>
 
       <nav class="navbars">
-        <a href="" style="--i:0">SERVICIOS</a>
-        <a href="" style="--i:1">CONTACTO</a>
-        <a href="" style="--i:2">RESERVAS</a>
-        <a href="" style="--i:3">GALERIA</a>
+        <a href="#servicios" style="--i:0">SERVICIOS</a>
+        <a href="#galeria" style="--i:1">GALERIA</a>
+        <a href="#contacto" style="--i:2">CONTACTO</a>
+        <a href="#ubicacion" style="--i:3">UBICACIÓN</a>
+        <a href="#reservas" style="--i:4">RESERVAS</a>
       </nav>
     </header>
     <main>
       <div class="relleno"></div>
-      <div class="hero">
+      <div class="hero" id="hero">
         <!-- <h1 class="hero-h1">Walüng</h1> -->
         <h2 class="hero-h2">TU LUGAR PARA HOSPEDARTE EN LA COMARCA</h2>
       </div>
@@ -62,7 +66,7 @@
 
 
       </div>
-      <div class="intro">
+      <div class="intro" id="galeria">
         <h2 class="subtitulos">Conoce nuestras instalaciones</h2>
         <div class="carrusel">
           <div id="carouselExample" class="carousel slide">
@@ -179,7 +183,7 @@
           </div>
         </div>
       </div>
-      <div class="intro">
+      <div class="intro" id="servicios">
         <h2 class="subtitulos">SERVICIOS</h2>
         <p class="descripcion">Contamos con departamentos familiares para cuatro personas y departamentos para dos
           personas. Ambos cuentan con las siguientes comodidades:
@@ -198,7 +202,7 @@
         </p>
       </div>
       <hr class="solid">
-      <div class="ubicacion intro">
+      <div class="ubicacion intro" id="ubicacion">
         <h2 class="subtitulos">UBICACIÓN</h2>
         <div class="div-map">
           <iframe class="map"
@@ -207,7 +211,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <div class="reservas">
+      <div class="reservas" id="reservas">
         <div class="div-imagen-reserva">
           <img class="pirque" src="images/cerro_pirque.jpg" alt="">
         </div>
@@ -220,7 +224,10 @@
             rel="noopener noreferrer">RESERVAR</a>
         </div>
       </div>
-      <div class="contacto">
+
+    </main>
+    <footer>
+      <div class="contacto" id="contacto">
         <h2 class="subtitulos">CONTACTO</h2>
 
         <p class="descripcion">Comunicate con nosotros por cualquiera de los siguientes medios:</p>
@@ -243,11 +250,8 @@
 
       </div>
 
-    </main>
+    </footer>
   </div>
-  <footer>
-
-  </footer>
 
 
 

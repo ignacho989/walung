@@ -281,9 +281,10 @@ body {
   text-decoration: none;
   /* border: 2px solid black; */
   border-radius: 4px;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: black;
   background-color: rgb(248, 248, 246);
+  border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   transition: all 0.2s ease-in;
 }
@@ -306,6 +307,10 @@ body {
   color: #fff;
 }
 
+footer {
+  width: 100%;
+  height: auto;
+}
 
 
 /* .iconos-contacto {
@@ -393,7 +398,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .icons {
     display: inline-flex;
 
@@ -427,7 +432,7 @@ body {
   }
 
   #check:checked~.navbars {
-    height: 17.7rem;
+    height: 19.7rem;
   }
 
   .navbars a {
