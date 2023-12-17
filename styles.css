@@ -408,6 +408,25 @@ footer {
 
 }
 
+.modal-content {
+  border-radius: 0px;
+}
+
+.modal-bod {
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  padding: 2rem;
+
+}
+
+.modal-footer {
+  gap: 1rem;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 992px) {
   .headers {
