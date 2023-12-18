@@ -200,7 +200,7 @@ body {
 }
 
 .contenedor-opciones {
-  width: clamp(70%, 60%, 50%);
+  width: clamp(80%, 60%, 50%);
   padding-block: 4rem;
   padding-left: 7rem;
   border: 2px solid black;
@@ -557,6 +557,10 @@ footer {
 
   .contenedor-opciones {
     padding: 0.5rem;
+  }
+
+  .opciones-precio {
+    text-align: center;
   }
 
   .whatsape {
