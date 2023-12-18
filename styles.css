@@ -229,6 +229,11 @@ body {
   font-family: "Assistant", sans-serif;
 }
 
+.promocion {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .div-map {
   width: 100%;
   display: flex;
@@ -556,11 +561,16 @@ footer {
   }
 
   .contenedor-opciones {
-    padding: 0.5rem;
+    padding: 0.8rem;
   }
 
   .opciones-precio {
     text-align: center;
+  }
+
+  .promocion {
+    text-align: center;
+    font-size: 1rem;
   }
 
   .whatsape {
